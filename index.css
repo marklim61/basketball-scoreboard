@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0E2240;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    padding: 70px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.title {
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35.89px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080001;
+    color: #FDB927;
+    width: 155px;
+    /* ensures both scores are the same width */
+    height: 120px;
+    /* ensures both scores are the same height */
+    line-height: 127px;
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    /* imported from (https://www.cdnfonts.com/cursed-timer-ulil.font) */
+    border-radius: 8px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+.points {
+    /* "display: flex; align-items: center; justify-content: center;" to make it centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E2240;
+    color: #9AABD8;
+    width: 45px;
+    height: 45px;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer; /* makes it interactive */
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    border: 2px solid #9AABD8;
+    border-radius: 6px;
+    transition: 0.4s ease-in-out; /* little transition when hovering */
+    margin-top: 0;
+}
+
+.points:hover {
+    background-color: #9AABD8;
+    color: #0E2240;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
